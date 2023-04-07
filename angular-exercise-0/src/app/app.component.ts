@@ -7,12 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-exercise-0';
-  
   evenLen: string[]=[]
   oddLen: string[]=[]
   onButtonClicked(text: string){
     const words = text.trim().split(' ')
-    this.evenLen = words.filter( w => w.length%2 === 0)
-    this.oddLen = words.filter( w => w.length%2)
+    const ev = words.filter( w => w.length%2 === 0)
+    const od = words.filter( w => w.length%2)
+    this.evenLen.push(...ev)
+    this.oddLen.push(...od)
+  
+    
+
   }
 }

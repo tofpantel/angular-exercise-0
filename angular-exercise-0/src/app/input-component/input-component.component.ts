@@ -11,5 +11,6 @@ export class InputComponentComponent {
 
   onSubmit(){
     this.submitInput.emit(this.userInput);
+    this.userInput=''
   }
 }
