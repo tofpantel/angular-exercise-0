@@ -1,0 +1,22 @@
+<div class="border border-2 border-secondary">
+    <div class="bg-info text-center">input.component</div>
+    <div class="row mt-2 p-2">
+        <div class="col"></div>
+        <div class="col">
+          <!-- To use ngModel for 2-way binding, FormsModule has to be added in the
+          app.module.ts -->
+          <input type="text" class="form-control" [(ngModel)]="userInput" placeholder="Write something" />
+        </div>
+        <div class="col">
+          <button class="btn btn-danger" (click)="onSubmit()">
+            Submit text
+          </button>
+        </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col"><app-even-component></app-even-component></div>
+      <div class="col"><app-odd-component></app-odd-component></div>
+    </div> -->
+</div>
+  
